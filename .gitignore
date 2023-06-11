@@ -1,0 +1,17 @@
+*.gz
+*.log
+*.fls
+*.aux
+*.fdb_latexmk
+*.xml
+*.bcf
+*.out
+*.zip
+*.toc
+*.bbl
+*.blg
+Davide_Ligari/*
+data/*
+.vscode/*
+*.pyc
+
