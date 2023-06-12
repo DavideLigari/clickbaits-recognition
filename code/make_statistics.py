@@ -1,6 +1,7 @@
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, roc_curve, roc_auc_score
 import seaborn as sns
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def calculate_metrics(actual_labels, predicted_labels):
@@ -39,4 +40,21 @@ def plot_confusion_matrix(actual_labels, predicted_labels, classes):
     plt.xlabel("Predicted Labels")
     plt.ylabel("Actual Labels")
     plt.title("Confusion Matrix")
+    plt.show()
+
+
+def plot_roc_curve(actual_labels, predicted_probabilities):
+    fpr, tpr, thresholds = roc_curve(
+        actual_labels, predicted_probabilities)
+    auc = roc_auc_score(actual_labels, predicted_probabilities)
+
+    plt.plot(fpr, tpr, label='ROC Curve (AUC = {:.2f})'.format(auc))
+    # Diagonal line representing random classifier
+    plt.plot([0, 1], [0, 1], 'r--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver Operating Characteristic')
+    plt.legend(loc='lower right')
     plt.show()
