@@ -35,7 +35,7 @@ def calculate_metrics(actual_labels, predicted_labels):
 # ms.plot_confusion_matrix(Y_valid, predictions_validation, ['clickbait','non-clickbait'])
 def plot_confusion_matrix(actual_labels, predicted_labels, classes):
     cm = confusion_matrix(actual_labels, predicted_labels)
-    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues",
+    sns.heatmap(cm, annot=True, fmt="d", cmap=plt.cm.Reds,
                 xticklabels=classes, yticklabels=classes)
     plt.xlabel("Predicted Labels")
     plt.ylabel("Actual Labels")
