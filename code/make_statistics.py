@@ -28,7 +28,8 @@ def calculate_metrics(actual_labels, predicted_labels):
         elif actual == 1 and predicted == 0:
             false_negative += 1
     precision = true_positive / (true_positive + false_positive)
-    return true_positive, true_negative, false_positive, false_negative, precision
+    false_positive_rate = false_positive / (false_positive + true_negative)
+    return false_positive_rate
 
 
 # example of usage
