@@ -4,25 +4,22 @@ This repository contains a project aimed at building a classifier to distinguish
 
 ## Problem Definition and Data
 
-The objective is to analyze a dataset of headlines and build a classifier that can predict whether a given headline is a clickbait or not. 
-The dataset consists of 32,000 headlines, evenly divided into two classes: 'clickbait' and 'non-clickbait'. 
-It includes three sets: training, validation, and test sets, with 24,000, 4,000, and 4,000 samples, respectively.
-The headlines are stored in text files, with each line representing a single headline.
+The objective of this project is to analyze a dataset of headlines and develop a classifier that can predict whether a given headline is a clickbait or not. The dataset consists of 32,000 headlines, evenly divided into two classes: 'clickbait' and 'non-clickbait'. It includes three sets: training, validation, and test sets, with 24,000, 4,000, and 4,000 samples, respectively. The headlines are stored in text files, with each line representing a single headline.
 
-## Assignment
+## Tasks
 
-To complete the programming assignment, the following tasks are expected:
+To achieve the project goal, the following tasks were performed:
 
-1. **Data Analysis**: Analyze and comment on the characteristics of the dataset.
-2. **Data Pre-processing**: Design and implement a suitable data pre-processing procedure to prepare the headlines for classification.
-3. **Classification Model**: Implement, train, and evaluate one or more classification models to predict clickbait headlines. Use the Python programming language and any machine learning library (including pvml) for implementation.
-4. **Model Evaluation and Visualization**: Utilize appropriate data processing and visualization techniques to analyze the behavior of the trained models.
+1. **Data Analysis**: Analyzed the dataset and provided insights into its characteristics.
+2. **Data Pre-processing**: Designed and implemented an effective data pre-processing procedure to prepare the headlines for classification.
+3. **Classification Model**: Implemented, trained, and evaluated one or more classification models to predict clickbait headlines. Python programming language was used, and any machine learning library, including pvml, was allowed for implementation.
+4. **Model Evaluation and Visualization**: Utilized suitable data processing and visualization techniques to analyze the behavior of the trained models.
 
-Two scenarios should be considered for the evaluation: a generic scenario where all errors are equally important, and a 'precision-oriented' scenario where minimizing the chance of false positives is crucial.
+Two evaluation scenarios were considered: a generic scenario where all errors are equally important, and a 'precision-oriented' scenario where minimizing false positives was prioritized.
 
 ## Repository Structure
 
-The repository is structured as follows:
+The repository is organized as follows:
 
 ```
 |- data/
@@ -33,12 +30,9 @@ The repository is structured as follows:
 |- dataset/
 |- code/
 ```
-The `code` directory contains the notebook used to conduct the analysis and the python scripts, which contains some customized functions 
 
-The `data` contains the results of the analisis performed. 
+The `code` directory contains a notebook used for analysis and Python scripts that include customized functions for the project.
 
-The `dataset` directory contains the train,validation and test sets for both classes 
+The `data` directory stores the results of the performed analysis.
 
-
-
-
+The `dataset` directory provides the training, validation, and test sets for both clickbait and non-clickbait classes.
