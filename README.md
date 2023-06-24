@@ -12,8 +12,8 @@ To achieve the project goal, the following tasks were performed:
 
 1. **Data Analysis**: Analyzed the dataset and provided insights into its characteristics.
 2. **Data Pre-processing**: Designed and implemented an effective data pre-processing procedure to prepare the headlines for classification.
-3. **Classification Model**: Implemented, trained, and evaluated one or more classification models to predict clickbait headlines. Python programming language was used, and any machine learning library, including pvml, was allowed for implementation.
-4. **Model Evaluation and Visualization**: Utilized suitable data processing and visualization techniques to analyze the behavior of the trained models.
+3. **Classification Model**: Logistic regression and multinomial Naive Bayes classifier were trained and compared in terms of accuracy and false positive rate. 
+5. **Model Evaluation and Visualization**: Utilized suitable data processing and visualization techniques to analyze the behavior of the trained models.
 
 Two evaluation scenarios were considered: a generic scenario where all errors are equally important, and a 'precision-oriented' scenario where minimizing false positives was prioritized.
 
