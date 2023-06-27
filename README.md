@@ -30,13 +30,14 @@ The repository is organized as follows:
 |- dataset/
 |- code/
 ```
-## Contact
-If you have any questions or suggestions regarding this project, please feel free to contact me via email at davide.ligari01@gmail.com
-
-Thank you for your interest in this project!
 
 The `code` directory contains a notebook used for analysis and Python scripts that include customized functions for the project.
 
 The `data` directory stores the results of the performed analysis.
 
 The `dataset` directory provides the training, validation, and test sets for both clickbait and non-clickbait classes.
+
+## Contact
+If you have any questions or suggestions regarding this project, please feel free to contact me via email at davide.ligari01@gmail.com
+
+Thank you for your interest in this project!
